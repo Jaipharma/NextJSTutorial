@@ -21,22 +21,24 @@ export default function Home() {
 
         <div className={styles.grid}>
           <a href="http://localhost:3000/posts/first-post" className={styles.card}>
-            <h3>How to create page &rarr;</h3>
-            <p>New page.</p>
+            <h3>Create new page &rarr;</h3>
+            <p>ลิ้งด้วย &lt;a &gt; tag จะ refresh หน้าเว็บ</p>
           </a>
 
           <Link href="/posts/first-post" className={styles.card}>
-            <h3>Link Componet &rarr;</h3>
-            <p>Navigate betwenn page client side</p>
+            <h3>Link Component &rarr;</h3>
+            <p>Navigate between page client side</p>
           </Link>
 
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
+          <Link href="/show-image" className={styles.card}>
+            <h3>Image Component &rarr;</h3>
+            <p>แสดงรูปภาพด้วย Image Component จะช่วยปรับขนาดรูปภาพให้เหมาะสม</p>
+          </Link>
+
+          <Link href="/script" className={styles.card}>
+            <h3>Load third party script &rarr;</h3>
+            <p>load js script</p>
+          </Link>
 
           <a
             href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
