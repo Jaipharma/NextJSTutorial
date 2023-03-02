@@ -14,6 +14,11 @@ export default function Css() {
         layout.js<br></br>
         layout.module.css ต้องเป็น *.module.css เท่านั้น<br></br>
       </p>
+      <br></br>
+      <h2>
+        <Link href="/css/full-styles">Polishing Layout</Link>
+      </h2>
+      <br></br>
       <h2>
         <Link href="/">← Back to home</Link>
       </h2>
