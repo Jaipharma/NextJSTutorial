@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import Head from 'next/head';
 import styles from '../styles/Home.module.css';
 
@@ -19,15 +20,15 @@ export default function Home() {
         </p>
 
         <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
+          <a href="http://localhost:3000/posts/first-post" className={styles.card}>
+            <h3>How to create page &rarr;</h3>
+            <p>New page.</p>
           </a>
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
+          <Link href="/posts/first-post" className={styles.card}>
+            <h3>Link Componet &rarr;</h3>
+            <p>Navigate betwenn page client side</p>
+          </Link>
 
           <a
             href="https://github.com/vercel/next.js/tree/master/examples"
