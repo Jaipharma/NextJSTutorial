@@ -45,6 +45,11 @@ export default function Home() {
             <p>css module</p>
           </Link>
 
+          <Link href="/router/12345678" className={styles.card}>
+            <h3>Router &rarr;</h3>
+            <p>user router to get id</p>
+          </Link>
+
           <a
             href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
             className={styles.card}
